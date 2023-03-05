@@ -1,0 +1,21 @@
+<div class="bgimg">
+  <p>
+    <mat-toolbar class="bg-primary">
+      <button mat-icon-button aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span style="font-size: xx-large;margin-right: 5px;"><i><b>Nirvana </b></i></span><span><i> Resort</i></span>
+      <span class="example-spacer"></span>
+      <section>
+        <div class="example-button-row">
+          <button mat-raised-button routerLink="/user" class="me-2 btnbg">User</button>
+          <button mat-raised-button routerLink="/admin" class="me-2 btnbg">Admin</button>
+          <button mat-raised-button routerLink="/owner" class="btnbg">Owner</button>
+        </div>
+      </section>
+    </mat-toolbar>
+  </p>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
