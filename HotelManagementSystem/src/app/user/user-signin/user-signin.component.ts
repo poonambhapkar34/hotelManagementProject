@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { FormServiceService } from 'src/app/services/form-service.service';
 
 @Component({
@@ -7,12 +8,19 @@ import { FormServiceService } from 'src/app/services/form-service.service';
   styleUrls: ['./user-signin.component.scss']
 })
 export class UserSigninComponent {
-  userSign = "/user/signup";
 
-  constructor(private formServ: FormServiceService){ }
+  @ViewChild('signin') signinForm!: NgForm
   
-  onUserSignupClicked(){
-    this.formServ.userPath(this.userSign);
+  constructor(private formServ: FormServiceService){ }
+
+  onSubmitSignin(){
+    console.log(this.signinForm);
+    this.formServ.varifySignin().subscribe((data) => {
+      console.log(data);
+    })
+    
   }
+  
+  
 }
 

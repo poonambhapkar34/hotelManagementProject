@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "firstname": "Kapil",
+      "lastname": "Ingle",
+      "mobile": "1234567890",
+      "mail": "abc@example.com",
+      "uname": "kapil@123",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "gender": "male",
+      "hobbies": true,
+      "id": 1
+    },
+    {
+      "firstname": "Avinash",
+      "lastname": "Suryawanshi",
+      "mobile": "0987654321",
+      "mail": "avi@example.com",
+      "uname": "avinash@123",
+      "password": "112233",
+      "confirmPassword": "112233",
+      "gender": "male",
+      "hobbies": false,
+      "id": 2
+    },
+    {
+      "firstname": "Ashwini",
+      "lastname": "Sawale",
+      "mobile": "1029384756",
+      "mail": "ashu@example.com",
+      "uname": "ashwini@123",
+      "password": "111222333",
+      "confirmPassword": "111222333",
+      "gender": "female",
+      "hobbies": true,
+      "id": 3
+    },
+    {
+      "firstname": "Sarika",
+      "lastname": "Rakshasmare",
+      "mobile": "9234567899",
+      "mail": "sarika99@example.com",
+      "uname": "sarika@123",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "gender": "female",
+      "hobbies": true,
+      "id": 4
+    },
+    {
+      "firstname": "Tushar",
+      "lastname": "Lone",
+      "mobile": "9860225543",
+      "mail": "tushar@example.com",
+      "uname": "tushar@123",
+      "password": "11881188",
+      "confirmPassword": "11881188",
+      "gender": "male",
+      "hobbies": true,
+      "id": 5
+    },
+    {
+      "firstname": "Kalpana",
+      "lastname": "Ingle",
+      "mobile": "1234321456",
+      "mail": "kalpana@example",
+      "uname": "kalpana@123",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "gender": "female",
+      "hobbies": true,
+      "id": 6
+    }
+  ],
+  "admins": [
+    {
+      "firstname": "Kapil",
+      "lastname": "Ingle",
+      "mobile": "1234567890",
+      "mail": "abc@example.com",
+      "uname": "kapil@123",
+      "password": "111",
+      "confirmPassword": "111",
+      "gender": "male",
+      "hobbies": "",
+      "id": 1
+    },
+    {
+      "firstname": "Ashwini",
+      "lastname": "Sawale",
+      "mobile": "1029384756",
+      "mail": "sarika99@example.com",
+      "uname": "kapil@123",
+      "password": "111",
+      "confirmPassword": "111",
+      "gender": "female",
+      "hobbies": true,
+      "id": 2
+    }
+  ],
+  "owner": {
+    "firstname": "Avinash",
+    "lastname": "Suryawanshi",
+    "mobile": "0987654321",
+    "mail": "avi@example.com",
+    "uname": "avinash@123",
+    "password": "111",
+    "confirmPassword": "111",
+    "gender": "male",
+    "hobbies": ""
+  }
+}

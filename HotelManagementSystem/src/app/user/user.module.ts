@@ -5,6 +5,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserSigninComponent } from './user-signin/user-signin.component';
 // angular material
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [
     CommonModule,
     UserRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   exports: [ ]
 })
