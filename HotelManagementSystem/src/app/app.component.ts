@@ -11,16 +11,19 @@ export class AppComponent {
   
   constructor( private formServ: FormServiceService){ }
 
-  userModuleSelected(){
-    let selectedModule = "users";
-    this.formServ.moduleNavigation(selectedModule);
-  }
-  adminModuleSelected(){
-    let selectedModule = "admins";
-    this.formServ.moduleNavigation(selectedModule);
-  }
-  ownerModuleSelected(){
-    let selectedModule = "owner";
-    this.formServ.moduleNavigation(selectedModule);
+  // userModuleSelected(){
+  //   let selectedModule = "users";
+  //   this.formServ.moduleNavigation(selectedModule);
+  // }
+  // adminModuleSelected(){
+  //   let selectedModule = "admins";
+  //   this.formServ.moduleNavigation(selectedModule);
+  // }
+  // ownerModuleSelected(){
+  //   let selectedModule = "owners";
+  //   this.formServ.moduleNavigation(selectedModule);
+  // }
+  ModuleSelected(urlEndPoint:string){
+    this.formServ.urlCreation(urlEndPoint);
   }
 }

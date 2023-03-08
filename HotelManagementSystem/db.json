@@ -18,7 +18,7 @@
       "mobile": "0987654321",
       "mail": "avi@example.com",
       "uname": "avinash@123",
-      "password": "112233",
+      "password": "avinash@123",
       "confirmPassword": "112233",
       "gender": "male",
       "hobbies": false,
@@ -71,6 +71,66 @@
       "gender": "female",
       "hobbies": true,
       "id": 6
+    },
+    {
+      "firstname": "poonam",
+      "lastname": "patil",
+      "mobile": "7895656552",
+      "mail": "poo@lll.m",
+      "uname": "poonam",
+      "password": "poonama$34",
+      "confirmPassword": "poonam$34",
+      "gender": "female",
+      "hobbies": true,
+      "id": 7
+    },
+    {
+      "firstname": "Priya",
+      "lastname": "Jadhav",
+      "mobile": "7898988888",
+      "mail": "priya@dd.com",
+      "uname": "Priya",
+      "password": "Priya@123",
+      "confirmPassword": "Priya@123",
+      "gender": "female",
+      "hobbies": true,
+      "id": 8
+    },
+    {
+      "firstname": "Shree",
+      "lastname": "patil",
+      "mobile": "8988989997",
+      "mail": "Shree@123.com",
+      "uname": "Shree",
+      "password": "Shree@123",
+      "confirmPassword": "Shree@123",
+      "gender": "male",
+      "hobbies": true,
+      "id": 9
+    },
+    {
+      "firstname": "seeta",
+      "lastname": "patil",
+      "mobile": "8989898988",
+      "mail": "seeta@mm.com",
+      "uname": "seeta",
+      "password": "seeta@12",
+      "confirmPassword": "seeta@12",
+      "gender": "female",
+      "hobbies": true,
+      "id": 10
+    },
+    {
+      "firstname": "Sachin",
+      "lastname": "Sachin",
+      "mobile": "9595297369",
+      "mail": "Sachin@445.com",
+      "uname": "Sachin",
+      "password": "Sachin",
+      "confirmPassword": "Sachin",
+      "gender": "male",
+      "hobbies": true,
+      "id": 11
     }
   ],
   "admins": [
@@ -99,15 +159,18 @@
       "id": 2
     }
   ],
-  "owner": {
-    "firstname": "Avinash",
-    "lastname": "Suryawanshi",
-    "mobile": "0987654321",
-    "mail": "avi@example.com",
-    "uname": "avinash@123",
-    "password": "111",
-    "confirmPassword": "111",
+  "owners": {
+    "firstname": "raj",
+    "lastname": "patil",
+    "mobile": "9898989898",
+    "mail": "raj@445.com",
+    "uname": "Raj",
+    "password": "Raj@123",
+    "confirmPassword": "Raj@123",
     "gender": "male",
-    "hobbies": ""
-  }
+    "hobbies": true
+  },
+  "HotelDetails":[{
+    
+  }]
 }

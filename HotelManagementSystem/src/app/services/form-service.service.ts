@@ -10,11 +10,15 @@ export class FormServiceService {
 
   selectedModule!: string;
   userUrl!: string;
-  
-  moduleNavigation(modul: string){
-    this.selectedModule = modul;
-    console.log(this.selectedModule);
-    this.userUrl = `http://localhost:3000/${modul}`;
+  userUrl2!: string;
+  JourneyName! :string;
+  urlCreation(urlEndPoint: string){
+    this.JourneyName = urlEndPoint;
+    //this.selectedModule = urlEndPoint;
+    this.userUrl = `http://localhost:3000/${urlEndPoint}`; //http://localhost:3000/owners
+ //   this.userUrl2 = "http://localhost:3000/" + urlEndPoint;
+    console.log("url",this.userUrl);
+    
   }
 
   // adminUrl = `http://localhost:3000/${this.selectedModule}`;
@@ -23,12 +27,14 @@ export class FormServiceService {
   
   // adding new user/admin/owner 
   addUsers(user:any){
+
     return this.apiRequest.post(this.userUrl, user);
   }
 
   // Checking authentication of user/admin/owner
-  varifySignin(){
-    return this.apiRequest.get('http://localhost:3000')
+  getApiCall(){
+    console.log(this.userUrl);
+    return this.apiRequest.get(this.userUrl);
   }
 
 

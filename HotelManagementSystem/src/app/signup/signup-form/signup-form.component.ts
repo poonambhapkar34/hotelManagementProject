@@ -12,7 +12,9 @@ export class SignupFormComponent implements OnInit{
 
   sucessMsg = true;
   notificationOn = true;
-  constructor(private formserv: FormServiceService, private formBuilder: FormBuilder, private router: Router){ }
+  postApiRespo: any;
+  constructor(private formserv: FormServiceService,
+     private formBuilder: FormBuilder, private router: Router){ }
   
   ngOnInit(){
     this.settingFormData();
@@ -45,6 +47,7 @@ export class SignupFormComponent implements OnInit{
     let formValues = this.signupFormData.value;
     this.formserv.addUsers(formValues).subscribe((userInfo)=>{
       console.log(userInfo);
+      this.postApiRespo = userInfo;
     }, (err)=> { console.log(err);
     })
     this.signupFormData.reset();
@@ -59,6 +62,17 @@ export class SignupFormComponent implements OnInit{
 
   closerNotification(){
     this.notificationOn = false;
+    if(this.postApiRespo){
+      if(this.formserv.JourneyName == 'users'){
+        this.router.navigateByUrl('/user/userSuccess')
+      }
+      else if(this.formserv.JourneyName == 'Admins'){
+        //adminSucc
+      }
+      else{
+       //ownersucc
+      }
+    }
   }
 
 }

@@ -8,9 +8,12 @@
       <span class="example-spacer"></span>
       <section>
         <div class="example-button-row">
-          <button mat-raised-button routerLink="/user" class="me-2 btnbg" (click)="userModuleSelected()">User</button>
+          <!-- <button mat-raised-button routerLink="/user" class="me-2 btnbg" (click)="userModuleSelected()">User</button>
           <button mat-raised-button routerLink="/admin" class="me-2 btnbg" (click)="adminModuleSelected()">Admin</button>
-          <button mat-raised-button routerLink="/owner" class="btnbg" (click)="ownerModuleSelected()">Owner</button>
+          <button mat-raised-button routerLink="/owner" class="btnbg" (click)="ownerModuleSelected()">Owner</button> -->
+          <button mat-raised-button routerLink="/user" class="me-2 btnbg" (click)="ModuleSelected('users')">User</button>
+          <button mat-raised-button routerLink="/admin" class="me-2 btnbg" (click)="ModuleSelected('admins')">Admin</button>
+          <button mat-raised-button routerLink="/owner" class="btnbg" (click)="ModuleSelected('owners')">Owner</button>
         </div>
       </section>
     </mat-toolbar>
